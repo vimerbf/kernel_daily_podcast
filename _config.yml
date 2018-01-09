@@ -12,7 +12,7 @@ title: linux_kernel_podcast
 author: vimerbf
 description: Minimal, responsive Jekyll theme for hackers.
 baseurl: "/whiteglass" # the subpath of your site, e.g. /blog
-url: https://vimerbf.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://vimerbf.github.io/kernel_daily_podcast # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
 exclude:
@@ -53,7 +53,7 @@ lsi: false
 safe: true
 
 # Outputting
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 paginate_path: /posts/:num/
 paginate: 5
 
