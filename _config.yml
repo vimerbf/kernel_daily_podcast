@@ -8,16 +8,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: whiteglass theme
-author: Yous
+title: linux_kernel_podcast
+author: vimerbf
 description: Minimal, responsive Jekyll theme for hackers.
 baseurl: "/whiteglass" # the subpath of your site, e.g. /blog
-url: "https://yous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://vimerbf.github.io # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
 exclude:
@@ -46,8 +41,16 @@ plugins:
   - jekyll-sitemap
 
 # Build settings
-markdown: kramdown
-excerpt_separator: "<!-- more -->"
+github: [metadata]
+kramdown:
+        input: GFM
+        hard_wrap: false
+gems:
+        - jekyll-coffeescript
+        - jekyll-paginate
+
+lsi: false
+safe: true
 
 # Outputting
 permalink: /:year/:month/:day/:title/
